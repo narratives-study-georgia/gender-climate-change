@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="style_.css" rel="stylesheet" type="text/css">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <!-- <link href="https://davidstutz.de/bootstrap-multiselect/dist/css/bootstrap-multiselect.css" rel="stylesheet"> -->
+        <!-- <link href="http://davidstutz.de/bootstrap-multiselect/docs/css/bootstrap-3.3.2.min.css" rel="stylesheet"> -->
+        <!-- <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous"> -->
+
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <!-- <script src="https://davidstutz.de/bootstrap-multiselect/docs/js/bootstrap-3.3.2.min.js"></script> -->
+    <!-- <script src="https://davidstutz.de/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script> -->
+    <title>UNDP/UNFPA - HIV testing in Georgia</title>
+</head>
+<body>
+    <h1>Narrative Study - HIV testing in Georgia</h1>
+    <!-- <div class="title title-1">Bystander actions</div> -->
+    <div id="chart">
+            <div class='axes'>
+                    <div>Not at all</div>
+                    <div>Fully</div>
+                </div>
+                <div class="titles">
+                    <div> <span>3.2 To deal with this situation you
+                    </span><div><span>
+                    Secured new resources</span><span>
+                    Used resources you have in a different way</span><span>
+                    Connected to others (e.g. for information, exchange of experience)
+                </span></div></div>
+                    <div> <span>3.4 What made it difficult for you to deal with this situation
+                    </span><div><span>
+                    Lack of access to resources</span><span>
+                    Lack of knowledge/skills</span><span>
+                    Lack of opportunities
+                </span></div></div>
+                    <div> <span>3.5 What influenced the way you dealt with this situation?
+                    </span><div><span>
+                    Formal training</span><span>
+                    Own experience</span><span>
+                    Online resources
+                </span></div></div>
+                    <div> <span>3.6 What helped you to deal with this situation?
+                    </span><div><span>
+                    Financial support</span><span>                    
+                    Rules and procedures</span><span>                    
+                    Infrastructure/technology
+                </span></div></div>
+<!-- <div> <span>What was the person looking to get tested worried about? 
+</span><div><span>
+People finding out that he/she took the test
+</span><span>
+The impact a possible positive result may have on his/her life
+</span><span>
+Reliability of the test
+</span></div></div>
+
+
+<div> <span>The deciding factor to test for HIV was … 
+</span><div><span>
+Accessibility of testing services
+</span><span>
+Awareness of testing services
+</span><span>
+Confidentiality guaranteed by testing services
+</span></div></div>
+<div> <span>The testing process was made easy and painless by…
+</span><div><span>
+Physical environment
+</span><span>
+Staff attitude
+</span><span>
+Possibility of self-testing
+</span></div></div>
+
+<div> <span>The person who took the test liked…
+    </span><div><span>
+Supportive environment / confidentiality
+</span><span>
+Speed of testing procedure
+</span><span>
+Information provided about testing procedure
+</span></div></div> -->
+
+ 
+<!-- <div> <span>The person looking to get tested had information on… 
+</span><div><span>
+HIV/AIDS implications
+</span><span>
+Causing potential harm to others
+</span><span>
+Testing services
+</span></div></div> -->
+                    
+                    </div>
+                    
+                    <div class="count">Total: <span id="count"></span></div>
+    </div>
+    <!-- <div class="def-cont">
+        <div class="in-title">In this situation you…</div>
+        <span> Did not get personally involved</span>
+            
+            <div class="line-1"></div>
+        <span>Openly confronted the perpetrator</span>
+
+        <span> Acted gradually</span>
+        <div class="line-2"></div>
+        <span>Acted immediately</span>
+    </div>
+    <form class="no-form">
+        <div class="select-group nowh"><div class="select-title">Did you act/do something about this situation?</div><div class="select-option">Yes</div><div class="select-option">No</div></div>
+    </form> -->
+    <div class="left-bar">
+        <div class="title">Climat change angle</div>
+        <form id="sec-1"></form>
+        <div class="title">Adaptation</div>
+        <form id="sec-2"></form>
+        <div class="title">Household level decision-making</div>
+        <form id="sec-3"></form>
+        <div class="title">Behaviours / Intervention</div>
+        <form id="sec-4"></form>
+        <div class="title">About the respodent</div>
+        <form id="sec-5"></form>
+        
+            <div class="title" id="clear">Clear all filters</div>
+            
+            <div>
+                <span class="title"> Color coding: </span> <select name="coloryze"><option>None</option></select> <ul class="col-codes"></ul>
+            </div>
+            <div>
+                <span class="title"> Graph type: </span> <select name="line"><option value="Linear" selected>Linear</option><option value="Step">Steps</option><option value="Basis">Basis</option></select>
+            </div>
+    </div>
+    <div id="pop-cont">
+        <div id="pop">
+            <div id="pop-close">Close</div>
+            <div id="pop-inner"></div>
+        </div>
+    </div>
+        
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="chart_.js"></script>
+    
+</body>
+
+</html>
+
+
+
+<!-- 
+    Missing N/A & Others & Q2.7&2.4&3.3&3.4
+    Y dimentions
+        Fully 
+        Not At all
+
+    skipped questions
+
+    //// invert Y
+
+    make Y wikasjdn
+
+    ////narrow lines
+
+    sotrten poup text for safary and chrome
+
+    add triangular wiev
+
+    ///add counts of results
+
+    clear all filters button
+
+-->
